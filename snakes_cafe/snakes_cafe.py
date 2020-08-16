@@ -74,8 +74,16 @@ def order() :
           print(f"** {menu[inp_user] } order of {inp_user.capitalize()} have been added to your meal **")
     
           while inp_user !='quit':
+            
             inp_user = input()
-            menu[inp_user] +=1
+            if inp_user == "quit" :
+                print('thanks for your visit')
+                exit()
+            else :
+              
+                np_user=  input('your order is not exisit please order from the menu or print quit to exit /n')
+              
+            # menu[inp_user] +=1
             print(f"** {menu[inp_user] } order of {inp_user.capitalize()} have been added to your meal **")
 
      else:
