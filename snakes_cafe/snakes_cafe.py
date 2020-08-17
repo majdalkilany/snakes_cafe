@@ -81,10 +81,9 @@ def order() :
                 exit()
             else :
               
-                np_user=  input('your order is not exisit please order from the menu or print quit to exit /n')
               
-            # menu[inp_user] +=1
-            print(f"** {menu[inp_user] } order of {inp_user.capitalize()} have been added to your meal **")
+              menu[inp_user] +=1
+              print(f"** {menu[inp_user] } order of {inp_user.capitalize()} have been added to your meal **")
 
      else:
         print('your order is not exisit please order from the menu')
